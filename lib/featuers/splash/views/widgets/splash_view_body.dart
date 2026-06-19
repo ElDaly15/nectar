@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nectar/core/utils/app_images.dart';
-// import 'package:get/get.dart' as g;
+import 'package:get/get.dart' as g;
+import 'package:nectar/featuers/splash/views/get_start_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -42,14 +43,10 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
     Future.delayed(
         const Duration(milliseconds: 3500),
-        // () => FirebaseAuth.instance.currentUser != null
-        //     ? g.Get.to(() => const HomeView(),
-        //         transition: g.Transition.fade,
-        //         duration: const Duration(milliseconds: 800))
-        //     : g.Get.off(() => const GetStartedView(),
-        //         transition: g.Transition.fade,
-        //         duration: const Duration(milliseconds: 800)));
-    );
+       () =>  g.Get.off(() => const GetStartView(),
+                transition: g.Transition.fade,
+                duration: const Duration(milliseconds: 800)));
+    
   }
 
   @override
