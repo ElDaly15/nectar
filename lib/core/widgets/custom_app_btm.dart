@@ -14,7 +14,7 @@ class CustomAppBtm extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        minimumSize: const Size(double.infinity, 60),
+        minimumSize: const Size(double.infinity, 67),
         backgroundColor: AppColors.mainColorTheme,
       ),
       onPressed: onPressed,
