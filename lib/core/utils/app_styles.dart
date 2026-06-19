@@ -6,6 +6,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 11),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -14,14 +15,17 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 11),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
 
   static TextStyle font11SemiBold(BuildContext context) {
     return TextStyle(
+      
       fontSize: getResponsiveFontSize(context, fontSize: 11),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -30,6 +34,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 11),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -38,6 +43,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 11),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -47,6 +53,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -55,6 +62,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -63,6 +71,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -71,6 +80,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -79,6 +89,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -88,6 +99,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -96,6 +108,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -104,6 +117,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -112,6 +126,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -120,6 +135,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -130,6 +146,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -138,6 +155,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -146,6 +164,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -154,6 +173,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -162,6 +182,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -172,6 +193,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -180,6 +202,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -188,6 +211,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -196,6 +220,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -204,6 +229,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -214,6 +240,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -222,6 +249,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -230,6 +258,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -238,6 +267,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -246,6 +276,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
@@ -256,6 +287,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w400,
     );
   }
@@ -264,6 +296,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w500,
     );
   }
@@ -272,6 +305,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w600,
     );
   }
@@ -280,6 +314,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.bold,
     );
   }
@@ -288,6 +323,7 @@ abstract class TextStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       color: Colors.black,
+      fontFamily: 'Gilroy',
       fontWeight: FontWeight.w800,
     );
   }
