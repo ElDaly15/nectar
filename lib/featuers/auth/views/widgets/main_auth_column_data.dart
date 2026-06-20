@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_images.dart';
 import 'package:nectar/core/utils/app_styles.dart';
@@ -21,9 +20,18 @@ class MainAuthColumnData extends StatelessWidget {
             style: TextStyles.font24SemiBold(context).copyWith(fontSize: 25),
           ),
           const SizedBox(height: 30),
-          RowOfPhoneAuth(),
-          const SizedBox(height: 4),
-          Divider(thickness: 1, color: Color(0xffE2E2E2)),
+          InkWell(
+            borderRadius: BorderRadius.circular(16),
+            onTap: () {
+            },
+            child: Column(
+              children: [
+                RowOfPhoneAuth(),
+                const SizedBox(height: 4),
+                Divider(thickness: 1, color: Color(0xffE2E2E2)),
+              ],
+            ),
+          ),
 
           const SizedBox(height: 30),
           Center(

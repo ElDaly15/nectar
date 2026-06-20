@@ -25,7 +25,7 @@ class CustomSocialMediaLoginBtm extends StatelessWidget {
               children: [
                 SvgPicture.asset(image, width: 22, height: 24),
                 Spacer(),
-                Text(text, style: TextStyles.font24SemiBold(context).copyWith(color: AppColors.whiteColor)),
+                Center(child: Text(text, style: TextStyles.font24SemiBold(context).copyWith(color: AppColors.whiteColor))),
                 Spacer(),
               ],
             ),
