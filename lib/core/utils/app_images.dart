@@ -18,6 +18,10 @@ class Assets {
   /// assets/images/facebook.svg
   static const String imagesFacebook = "assets/images/facebook.svg";
 
+  /// Assets for imagesFooterBlur
+  /// assets/images/footer_blur.png
+  static const String imagesFooterBlur = "assets/images/footer_blur.png";
+
   /// Assets for imagesFooterParticles
   /// assets/images/footer_particles.svg
   static const String imagesFooterParticles = "assets/images/footer_particles.svg";
@@ -25,6 +29,10 @@ class Assets {
   /// Assets for imagesGoogle
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
+
+  /// Assets for imagesHeaderBlur
+  /// assets/images/header_blur.png
+  static const String imagesHeaderBlur = "assets/images/header_blur.png";
 
   /// Assets for imagesLoginSvgCarrots
   /// assets/images/login_svg_carrots.svg
