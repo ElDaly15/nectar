@@ -27,7 +27,7 @@ class MainAuthColumnData extends StatelessWidget {
             onTap: () {
                g.Get.to(() => const MobileAuthView(),
                 transition: g.Transition.fade,
-                duration: const Duration(milliseconds: 800));
+                duration: const Duration(milliseconds: 400));
             },
             child: Column(
               children: [
