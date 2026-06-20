@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_styles.dart';
-import 'package:phone_form_field/phone_form_field.dart';
+import 'package:nectar/featuers/auth/views/widgets/custom_phone_form_field.dart';
 
 class MobileAuthColumnData extends StatelessWidget {
   const MobileAuthColumnData({super.key});
@@ -9,67 +9,64 @@ class MobileAuthColumnData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SingleChildScrollView(
-        padding: EdgeInsets.only(
-          bottom: MediaQuery.of(context).viewInsets.bottom,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const BackButton(color: Colors.black),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 20),
-                  Text(
-                    'Enter your mobile number',
-                    style: TextStyles.font24SemiBold(
-                      context,
-                    ).copyWith(fontSize: 25),
-                  ),
-                  const SizedBox(height: 20),
-                  Text(
-                    'Mobile number',
-                    style: TextStyles.font18SemiBold(
-                      context,
-                    ).copyWith(color: AppColors.greyText),
-                  ),
-                  PhoneFormField(
-                    initialValue: PhoneNumber.parse('+20'),
-                    validator: PhoneValidator.compose([
-                      PhoneValidator.required(context),
-                      PhoneValidator.validMobile(context),
-                    ]),
-                    countrySelectorNavigator:
-                        const CountrySelectorNavigator.page(),
-                    onChanged: (phoneNumber) {},
-                    enabled: true,
-                    isCountrySelectionEnabled: true,
-                    style: TextStyles.font24SemiBold(context),
-                    decoration: InputDecoration(
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: AppColors.greyText),
-                      ),
-                      border: UnderlineInputBorder(
-                        borderSide: BorderSide(color: AppColors.greyText),
-                      ),
-                      focusColor: AppColors.mainColorTheme,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const BackButton(color: Colors.black),
+          Expanded(
+            child: SingleChildScrollView(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).viewInsets.bottom,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 20),
+                    Text(
+                      'Enter your mobile number',
+                      style: TextStyles.font24SemiBold(
+                        context,
+                      ).copyWith(fontSize: 25),
                     ),
-                    cursorColor: AppColors.mainColorTheme,
-                    isCountryButtonPersistent: true,
-                    countryButtonStyle: CountryButtonStyle(
-                      showFlag: true,
-                      textStyle: TextStyles.font24SemiBold(context),
-                      flagSize: 20,
+                    const SizedBox(height: 20),
+                    Text(
+                      'Mobile number',
+                      style: TextStyles.font18SemiBold(
+                        context,
+                      ).copyWith(color: AppColors.greyText),
                     ),
-                  ),
-                ],
+                    const CustomPhoneFormField(),
+                  ],
+                ),
               ),
             ),
-          ],
-        ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 12,
+            ),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: IconButton(
+                
+                style: IconButton.styleFrom(
+                  
+                  backgroundColor: AppColors.mainColorTheme,
+                  shape: CircleBorder(
+                    
+                  ),
+                ),
+                color: AppColors.whiteColor,
+                onPressed: () {},
+                padding: const EdgeInsets.all(16),
+                icon: const Icon(Icons.arrow_forward_ios_outlined),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -30,7 +30,6 @@ class MobileAuthViewBody extends StatelessWidget {
               ),
             ),
           ),
-          const MobileAuthColumnData(),
           Positioned(
             bottom: 0,
             left: 0,
@@ -54,6 +53,9 @@ class MobileAuthViewBody extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+          ),
+          const Positioned.fill(
+            child: MobileAuthColumnData(),
           ),
         ],
       ),
