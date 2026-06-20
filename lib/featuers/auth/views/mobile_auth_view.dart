@@ -8,8 +8,7 @@ class MobileAuthView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        resizeToAvoidBottomInset: true,
-
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: MobileAuthViewBody(),
     );

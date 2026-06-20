@@ -15,9 +15,6 @@ class MobileAuthColumnData extends StatelessWidget {
           const BackButton(color: Colors.black),
           Expanded(
             child: SingleChildScrollView(
-              padding: EdgeInsets.only(
-                bottom: MediaQuery.of(context).viewInsets.bottom,
-              ),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
@@ -44,10 +41,12 @@ class MobileAuthColumnData extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 12,
-            ),
+            padding: EdgeInsets.only(
+              left: 16,
+              right: 16,
+              top: 12,
+              bottom: MediaQuery.of(context).viewInsets.bottom ,
+            ),  
             child: Align(
               alignment: Alignment.centerRight,
               child: IconButton(
