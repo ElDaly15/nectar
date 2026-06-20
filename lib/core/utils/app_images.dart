@@ -2,9 +2,17 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAuthCarrots
+  /// assets/images/auth_carrots.png
+  static const String imagesAuthCarrots = "assets/images/auth_carrots.png";
+
   /// Assets for imagesBackgroundSplash
   /// assets/images/background_splash.png
   static const String imagesBackgroundSplash = "assets/images/background_splash.png";
+
+  /// Assets for imagesEgFlag
+  /// assets/images/eg_flag.png
+  static const String imagesEgFlag = "assets/images/eg_flag.png";
 
   /// Assets for imagesFacebook
   /// assets/images/facebook.svg

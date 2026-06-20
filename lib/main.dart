@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:nectar/featuers/splash/views/splash_view.dart';
 
-void main() => runApp(
-  DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => NectarApp(), // Wrap your app
-  ),
-);
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => NectarApp(),
+    ),
+  );
+}
 class NectarApp extends StatelessWidget {
   const NectarApp({super.key});
 
