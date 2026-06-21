@@ -4,7 +4,7 @@ import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_styles.dart';
 import 'package:nectar/core/widgets/custom_app_text_field.dart';
 import 'package:nectar/featuers/auth/views/otp_verify_view.dart';
-import 'package:nectar/featuers/auth/views/widgets/custom_phone_form_field.dart';
+import 'package:nectar/featuers/auth/views/select_location_view.dart';
 
 class VerifyColumnData extends StatelessWidget {
   const VerifyColumnData({super.key});
@@ -70,7 +70,7 @@ class VerifyColumnData extends StatelessWidget {
                     color: AppColors.whiteColor,
                     onPressed: () {
                       g.Get.to(
-                        () => const OtpVerifyView(),
+                        () => const SelectLocationView(),
                         transition: g.Transition.fade,
                         duration: const Duration(milliseconds: 400),
                       );

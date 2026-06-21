@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nectar/core/utils/app_images.dart';
-import 'package:nectar/featuers/auth/views/widgets/verify_column_data.dart';
+import 'package:nectar/featuers/auth/views/widgets/mobile_auth_column_data.dart';
+import 'package:nectar/featuers/auth/views/widgets/select_location_column_data.dart';
 
-class OtpVerifyViewBody extends StatelessWidget {
-  const OtpVerifyViewBody({super.key});
+class SelectLocationViewBody extends StatelessWidget {
+  const SelectLocationViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class OtpVerifyViewBody extends StatelessWidget {
             ),
           ),
           const Positioned.fill(
-            child: VerifyColumnData(),
+            child: SelectLocationColumnData(),
           ),
         ],
       ),
