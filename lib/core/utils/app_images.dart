@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/header_blur.png
   static const String imagesHeaderBlur = "assets/images/header_blur.png";
 
+  /// Assets for imagesLocation
+  /// assets/images/location.svg
+  static const String imagesLocation = "assets/images/location.svg";
+
   /// Assets for imagesLoginSvgCarrots
   /// assets/images/login_svg_carrots.svg
   static const String imagesLoginSvgCarrots = "assets/images/login_svg_carrots.svg";

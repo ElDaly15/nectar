@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart' as g;
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_styles.dart';
+import 'package:nectar/featuers/auth/views/otp_verify_view.dart';
 import 'package:nectar/featuers/auth/views/widgets/custom_phone_form_field.dart';
 
 class MobileAuthColumnData extends StatelessWidget {
@@ -59,7 +61,13 @@ class MobileAuthColumnData extends StatelessWidget {
                   ),
                 ),
                 color: AppColors.whiteColor,
-                onPressed: () {},
+                onPressed: () {
+                    FocusScope.of(context).unfocus(); // close keyboard first
+
+                    g.Get.to(() => const OtpVerifyView(),
+                transition: g.Transition.fade,
+                duration: const Duration(milliseconds: 400));
+                },
                 padding: const EdgeInsets.all(16),
                 icon: const Icon(Icons.arrow_forward_ios_outlined),
               ),
