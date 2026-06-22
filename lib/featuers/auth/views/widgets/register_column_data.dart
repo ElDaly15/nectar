@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart' as g;
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_images.dart';
 import 'package:nectar/core/utils/app_styles.dart';
 import 'package:nectar/core/widgets/custom_app_btm.dart';
 import 'package:nectar/core/widgets/custom_app_text_field.dart';
-import 'package:nectar/featuers/auth/views/register_view.dart';
 
-class LoginColumnData extends StatelessWidget {
-  const LoginColumnData({super.key});
+class RegisterColumnData extends StatelessWidget {
+  const RegisterColumnData({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: SingleChildScrollView(
-              child: Padding(
+    return Expanded(
+      child: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,19 +29,21 @@ class LoginColumnData extends StatelessWidget {
                     ),
                     const SizedBox(height: 50),
                     Text(
-                      'Loging',
+                      'Sign up',
                       style: TextStyles.font24SemiBold(
                         context,
                       ).copyWith(fontSize: 25),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Enter your emails and password',
+                      'Enter your credentials to continue',
                       style: TextStyles.font18SemiBold(
                         context,
                       ).copyWith(color: AppColors.greyText),
                     ),
                     const SizedBox(height: 30),
+                    CustomAppTextField(hintText: 'Enter your name', title: 'Username'),
+                    const SizedBox(height: 20),
                     CustomAppTextField(
                       hintText: 'Enter your email',
                       title: 'Email',
@@ -55,43 +55,45 @@ class LoginColumnData extends StatelessWidget {
                       obscureText: true,
                       title: 'Password',
                     ),
-                    const SizedBox(height: 4),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'Forgot Password?',
-                          style: TextStyles.font18SemiBold(
-                            context,
-                          ).copyWith(color: AppColors.mainColorTheme),
+                    const SizedBox(height: 15),
+                    RichText(text: TextSpan(
+                      text: 'By continuing, you agree to our ',
+                      style: TextStyles.font18SemiBold(context).copyWith(color: AppColors.greyText),
+                      children: [
+                        TextSpan(
+                          text: 'Terms of Service',
+                          style: TextStyles.font18SemiBold(context).copyWith(color: AppColors.mainColorTheme),
+                       
                         ),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
+                        TextSpan(text: ' and ', style: TextStyles.font18SemiBold(context).copyWith(color: AppColors.greyText)),
+                        TextSpan(
+                          text: 'Privacy Policy',
+                          style: TextStyles.font18SemiBold(context).copyWith(color: AppColors.mainColorTheme),
+                        ),
+                      ],
+                    )),
+                    const SizedBox(height: 30),
                     CustomAppBtm(text: 'Log in', onPressed: () {}),
                     const SizedBox(height: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Don’t have an account?',
-                          style: TextStyles.font18SemiBold(context).copyWith(),
+                          'Already have an account?',
+                          style: TextStyles.font18SemiBold(
+                            context,
+                          ).copyWith(),
                         ),
                         TextButton(
+                          
                           style: TextButton.styleFrom(
+                            
                             padding: const EdgeInsets.all(0),
                           ),
-
-                          onPressed: () {
-                            g.Get.to(
-                              () => const RegisterView(),
-                              transition: g.Transition.fade,
-                              duration: const Duration(milliseconds: 400),
-                            );
-                          },
+              
+                          onPressed: () {},
                           child: Text(
-                            'Sign up',
+                            'Login',
                             style: TextStyles.font18SemiBold(
                               context,
                             ).copyWith(color: AppColors.mainColorTheme),
@@ -102,9 +104,9 @@ class LoginColumnData extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
