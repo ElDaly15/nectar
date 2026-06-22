@@ -3,6 +3,7 @@ import 'package:get/get.dart' as g;
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_images.dart';
 import 'package:nectar/core/utils/app_styles.dart';
+import 'package:nectar/featuers/auth/views/login_view.dart';
 import 'package:nectar/featuers/auth/views/mobile_auth_view.dart';
 import 'package:nectar/featuers/auth/views/widgets/custom_social_media_login_btm.dart';
 import 'package:nectar/featuers/auth/views/widgets/row_of_phone_auth.dart';
@@ -52,7 +53,11 @@ class MainAuthColumnData extends StatelessWidget {
           CustomSocialMediaLoginBtm(
             text: 'Connect with Google',
             image: Assets.imagesGoogle,
-            onPressed: () {},
+            onPressed: () {
+                  g.Get.to(() => const LoginView(),
+                transition: g.Transition.fade,
+                duration: const Duration(milliseconds: 400));
+            },
             color: Color(0xff4285F4),
           ),
           const SizedBox(height: 20),

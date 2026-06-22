@@ -3,7 +3,6 @@ import 'package:get/get.dart' as g;
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_styles.dart';
 import 'package:nectar/core/widgets/custom_app_text_field.dart';
-import 'package:nectar/featuers/auth/views/otp_verify_view.dart';
 import 'package:nectar/featuers/auth/views/select_location_view.dart';
 
 class VerifyColumnData extends StatelessWidget {
@@ -34,6 +33,7 @@ class VerifyColumnData extends StatelessWidget {
                     CustomAppTextField(
                       hintText: '- - - -',
                       title: 'Code',
+                      keyboardType: TextInputType.number,
                       maxLength: 4,
                     ),
                   ],

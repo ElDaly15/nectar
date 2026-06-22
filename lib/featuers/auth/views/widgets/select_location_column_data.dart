@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart' as g;
 import 'package:nectar/core/utils/app_colors.dart';
 import 'package:nectar/core/utils/app_images.dart';
 import 'package:nectar/core/utils/app_styles.dart';
 import 'package:nectar/core/widgets/custom_app_btm.dart';
-import 'package:nectar/core/widgets/custom_app_text_field.dart';
 import 'package:nectar/core/widgets/custom_dropdown.dart';
-import 'package:nectar/featuers/auth/views/otp_verify_view.dart';
-import 'package:nectar/featuers/auth/views/select_location_view.dart';
 
 class SelectLocationColumnData extends StatefulWidget {
   const SelectLocationColumnData({super.key});

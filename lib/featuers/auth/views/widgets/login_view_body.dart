@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nectar/core/utils/app_images.dart';
-import 'package:nectar/featuers/auth/views/widgets/select_location_column_data.dart';
-
-class SelectLocationViewBody extends StatelessWidget {
-  const SelectLocationViewBody({super.key});
+import 'package:nectar/featuers/auth/views/widgets/login_column_data.dart';
+class LoginViewBody extends StatelessWidget {
+  const LoginViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +54,7 @@ class SelectLocationViewBody extends StatelessWidget {
             ),
           ),
           const Positioned.fill(
-            child: SelectLocationColumnData(),
+            child: LoginColumnData(),
           ),
         ],
       ),
